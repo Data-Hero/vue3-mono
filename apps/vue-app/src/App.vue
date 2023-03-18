@@ -17,8 +17,8 @@ import { Ref, ref, reactive } from 'vue';
 let helloList: Ref<string[]> = ref([]);
 let name: { name: string } = reactive({ name: "world" });
 
-async function saveHello() {  
-  await fetch("http://127.0.0.1:3000/hello", {
+function saveHello() {  
+  fetch("http://127.0.0.1:3000/hello", {
     method: "POST",
     mode: "cors", 
     credentials: "same-origin", 
@@ -38,8 +38,8 @@ async function saveHello() {
     })
 }
 
-async function loadHello() {    
-  await fetch("http://127.0.0.1:3000/hello", {
+function loadHello() {    
+  fetch("http://127.0.0.1:3000/hello", {
     method: "GET",
     mode: "cors", 
     credentials: "same-origin", 

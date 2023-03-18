@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var cors = require('cors');
 
 var helloList = [];
 
@@ -16,7 +15,6 @@ router.post('/', function(req, res, next) {
   helloList.push(req.body.name);
   res.sendStatus(200);
 });
-
 
 
 module.exports = router;

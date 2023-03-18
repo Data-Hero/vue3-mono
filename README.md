@@ -25,7 +25,7 @@ The **packages** workspace contains component libraries used within the web appl
 
 The **services** workspace contains the backend applications.
 
-This example project contains one vue project, one vue component library and one [express.js]() webservice inside the correct workspace.
+Every example workspace contains one project: One vue application, one vue component library and one [express.js]() webservice inside the correct workspace.
 
 ## Install from git
 First install [Node](https://nodejs.org/) in a recent version as well as [pnpm](https://pnpm.io/).
@@ -40,7 +40,11 @@ Then run the following commands:
 
 1. `pnpm install` to install all dependencies.
 2. `pnpm build` to build the packages in this repository
-3. `pnpm dev` to start a dev server for each project.
+3. `pnpm dev` to start a dev server for each project: 
+    1. Web App: http://localhost:4000/  
+    2. Component: http://localhost:4500/
+    3. Service: http://localhost:3000/hello
+
 
 `pnpm build` has to be run again after changing projects inside the **packages** workspace since it is building the `./packages/**/dist` folder used in other apps or services.
 `pnpm dev` will do when developing on projects inside **apps** or **services** workspaces. 

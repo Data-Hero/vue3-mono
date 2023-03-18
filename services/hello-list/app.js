@@ -8,7 +8,7 @@ var helloRouter = require('./routes/hello');
 
 var app = express();
 
-app.use(cors()) // Use this after the variable declaration
+app.use(cors())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

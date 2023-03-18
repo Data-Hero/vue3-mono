@@ -1,0 +1,16 @@
+{
+  "license": "MIT",
+  "author": "Data-Hero",
+  "name": "@mono-vue3/root",
+  "version": "1.0.0",
+  "description": "A monorepo setup to demonstrate pnpm with vue3 typescript",
+  "main": "index.js",
+  "scripts": {
+    "update": "pnpm update -r -i --latest",
+    "build":  "pnpm --stream -r build",
+    "dev":  "pnpm --stream --parallel dev",
+    "apps":   "pnpm --stream --parallel --filter \"{apps/*}\" run dev",
+    "services":   "pnpm --stream --parallel --filter \"{services/*}\" run dev"
+  },
+  "keywords": []
+}

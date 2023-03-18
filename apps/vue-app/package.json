@@ -1,0 +1,24 @@
+{
+  "name": "@vue3-mono/vue-app",
+  "license": "MIT",
+  "author": "Data-Hero",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 4000",
+    "typecheck": "vue-tesc --noEmit",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vue3-mono/vue-hello": "workspace:^",
+    "@types/node": "^18.14.1",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vue-tsc": "^1.0.24"
+  }
+}

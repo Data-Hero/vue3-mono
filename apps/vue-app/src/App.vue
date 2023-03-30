@@ -12,12 +12,17 @@
 
 <script setup lang="ts">
 import { VueHello }  from '@vue3-mono/vue-hello';
+import { Hello }  from '@vue3-mono/interfaces';
+
 import { Ref, ref, reactive } from 'vue';
 
 let helloList: Ref<string[]> = ref([]);
 let name: { name: string } = reactive({ name: "world" });
 
-function saveHello() {  
+function saveHello() {
+  const hello: Hello = {
+    name: name.name
+  }
   fetch("http://127.0.0.1:3000/hello", {
     method: "POST",
     mode: "cors", 
@@ -26,7 +31,7 @@ function saveHello() {
       "Content-Type": "application/json",
       'Access-Control-Allow-Origin':'*'
     },
-    body: JSON.stringify({ name: name.name })
+    body: JSON.stringify(hello)
   }).then((response) => {      
       if (response.status !== 200) { 
         console.log("Could not save hello") 

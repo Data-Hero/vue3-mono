@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 4000",
-    "typecheck": "vue-tsc --noEmit",
     "build": "vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "clean": "rimraf ./dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "@types/node": "^18.14.1",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue3-mono/vue-hello": "workspace:^",
+    "@vue3-mono/interfaces": "workspace:^",
     "typescript": "^4.9.3",
     "vite": "^4.1.0",
     "vue-tsc": "^1.0.24"

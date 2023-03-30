@@ -10,7 +10,8 @@
     "build":  "pnpm --stream -r build",
     "dev":  "pnpm --stream --parallel dev",
     "apps":   "pnpm --stream --parallel --filter \"{apps/*}\" run dev",
-    "services":   "pnpm --stream --parallel --filter \"{services/*}\" run dev"
+    "services":   "pnpm --stream --parallel --filter \"{services/*}\" run dev",
+    "clean":  "pnpm --stream --parallel clean"
   },
   "keywords": []
 }

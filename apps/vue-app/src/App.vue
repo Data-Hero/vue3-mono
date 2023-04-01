@@ -23,6 +23,7 @@ function saveHello() {
   const hello: Hello = {
     name: name.name
   }
+  
   fetch("http://127.0.0.1:3000/hello", {
     method: "POST",
     mode: "cors", 

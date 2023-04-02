@@ -11,6 +11,7 @@ This repository is supposed to be used with three pnpm workspaces - split as fol
   - vue-app2
   - ...
 - packages
+  - interfaces
   - component-library
   - component-library2
   - ...
@@ -21,11 +22,11 @@ This repository is supposed to be used with three pnpm workspaces - split as fol
 ```
 The **apps** workspace contains the frontend applications.
 
-The **packages** workspace contains component libraries used within the web applications.
+The **packages** workspace contains shared interfaces and component libraries used within the web applications.
 
 The **services** workspace contains the backend applications.
 
-Every example workspace contains one project: One vue application, one vue component library and one [express.js]() webservice inside the correct workspace.
+Every example workspace contains one or two projects: One vue application, one vue component library and shared interfaces in packages as well as one [express.js](https://expressjs.com/) webservice inside the correct workspace.
 
 ## Install from git
 First install [Node](https://nodejs.org/) in a recent version as well as [pnpm](https://pnpm.io/).

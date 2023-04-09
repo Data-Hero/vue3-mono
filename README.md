@@ -26,7 +26,7 @@ The **packages** workspace contains shared interfaces and component libraries us
 
 The **services** workspace contains the backend applications.
 
-Every example workspace contains one or two projects: One vue application, one vue component library and shared interfaces in packages as well as one [express.js](https://expressjs.com/) webservice inside the correct workspace.
+Each example workspace contains one or two projects: One vue application, one vue component library and shared interfaces in packages as well as one [express.js](https://expressjs.com/) webservice inside the correct workspace.
 
 ## Install from git
 First install [Node](https://nodejs.org/) in a recent version as well as [pnpm](https://pnpm.io/).
